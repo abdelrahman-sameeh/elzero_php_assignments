@@ -1,3 +1,4 @@
+<!-- 1 -->
 <?php
 $elzeroCourses = "Elzero Courses"
 
@@ -24,3 +25,98 @@ $elzeroCourses = "Elzero Courses"
 
 </html>
 
+<!-- 2 -->
+
+<!-- 
+المطلوب طباعة كلمة Web بخمس طرق مختلفة بواسطة ما تعلمته
+الخمس طرق يكونوا بواسطة Echo فقط
+-->
+<?php
+$name = "elzero";
+$$name = "Web";
+echo 'Web';
+echo '<br>';
+echo $$name;
+echo '<br>';
+echo $elzero;
+echo '<br>';
+echo "$elzero";
+echo '<br>';
+echo ${$name};
+echo '<br>';
+echo ${"elzero"};
+echo '<br>';
+?>
+
+
+<!-- 3 -->
+<?php
+$a = 200;
+$b =& $a;
+$a = 100;
+
+echo $b; // 100
+echo "<br />"; // 100
+?>
+
+<!-- 4 -->
+
+<!--
+  Needed this output
+  "C:/xampp/htdocs"
+  "localhost"
+  "C:\WINDOWS"
+  "C:/xampp/apache/bin/openssl.cnf" 
+  -->
+
+
+<?php
+
+echo $_SERVER['DOCUMENT_ROOT'];
+echo "<br />";
+echo $_SERVER['SERVER_NAME'];
+echo "<br />";
+echo $_SERVER['SYSTEM_ROOT'];
+echo "<br />";
+
+?>
+
+<!-- 5 -->
+<!-- 
+إنشيء Multiple Lines Comment
+اكتب بداخله 10 كلمات من الكلمات المحجوزة في اللغة والتي لا يمكن إستخدمها في برمجياتك
+-->
+
+<?php
+/**
+ * if
+ * else
+ * while
+ * clone
+ * for
+ * break
+ * continue
+ * switch
+ * echo 
+ * print
+ * print_r
+ */
+?>
+
+<!-- 6 -->
+
+
+<?php
+// needed output
+// "60"
+// "C:\xampp\htdocs\elzero\index.php"
+// "C:\xampp\htdocs\elzero"
+
+echo __LINE__;
+echo "<br />";
+echo __FILE__;
+echo "<br />";
+echo __DIR__;
+echo "<br />";
+
+?>
