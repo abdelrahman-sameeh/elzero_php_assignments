@@ -1,26 +1,122 @@
 <?php
-$elzeroCourses = "Elzero Courses"
+echo (int) (15.2 + 14.7) + (10.5 + 10.5); // 50
+echo "<br>";
+echo gettype((int) (15.2 + 14.7) + (int) (10.5 + 10.5)); // Integer
+echo "<br>";
 
-  ?>
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content=<?php echo $elzeroCourses ?>>
-  <title>Welcome To <?php echo $elzeroCourses ?></title>
-</head>
+// 100
+echo gettype(100); // Method One
+echo "<br>";
+var_dump(100); // Method Two
+echo "<br>";
+var_export(100); // Method Three => Optional
+echo "<br>";
 
-<body>
-  <h1><?php echo $elzeroCourses ?></h1>
-  <p>Here In <?php echo $elzeroCourses ?> We Provide Front-End And Back-End Courses</p>
-  <hr>
-  <div><?php echo $elzeroCourses ?> Is The What You Need.</div>
-  <footer>All Right Reserved To <?php echo $elzeroCourses ?></footer>
-</body>
 
-</html>
+
+echo "Hello \"Elzero\" \\\\ \"\"\" We Love \"\$\$PHP\"";
+
+// Needed Output
+// Hello "Elzero" \\ """ We Love "$$PHP"
+echo "<br>";
+
+
+echo nl2br("We \n Love \n Elzero \n Web \n School");
+
+// Needed Output
+// We
+// Love
+// Elzero
+// Web
+// School
+echo "<br>";
+
+echo nl2br(<<<'nowDoc'
+  Hello "'Elzero'"
+  We Love $Programming$
+  Languages Specially "PHP"
+nowDoc);
+
+echo "<br>";
+
+// Needed Output
+// 
+// 
+// 
+
+echo "<br>";
+
+
+$something = "Programming";
+
+echo <<<code
+    Hello \PHP\
+    We Love $something
+    code;
+
+// [1] Fix The Error
+// [2] Remove 2 Characters To Get The Output
+
+// Needed Output
+// Hello \PHP\ We Love Programming
+
+
+echo "<br>";
+
+
+echo (int) "Hello PHP" + 1;
+echo '<br>';
+echo (int) is_int("Hello PHP") + 1;
+echo '<br>';
+echo gettype((int) "Hello PHP");
+echo '<br>';
+echo gettype((int) is_int("Hello PHP"));
+// Needed Output
+// 1
+// integer
+echo '<br>';
+
+
+$arr = [
+  "Frontend" => [
+    "html",
+    "css",
+    "JS" => [
+      "VeuJs" => [
+        2 => "v2",
+        "v3"
+      ],
+      "reactJS",
+      "Svelte"
+    ]
+  ],
+  "Backend" => [
+    "PHP",
+    "MySQL",
+    "Security"
+  ],
+  "Git",
+  "Github",
+  "Testing" => [
+    "Unit Testing",
+    "End To End",
+    "Integration"
+  ]
+];
+
+echo <<<Arr
+<pre>
+  . print_r($arr, true) .
+</pre>
+Arr;
+
+echo '<pre>';
+echo print_r($arr);
+echo '</pre>';
+
+echo '<br>';
+
+
 
